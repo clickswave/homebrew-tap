@@ -1,7 +1,7 @@
 # Clickswave Homebrew tap
 
-Homebrew formulae for [Crossfyre](https://crossfyre.io), for Linux on x86_64 and
-arm64. There is no macOS build, so the formula refuses to install on a Mac.
+Homebrew formulae for [Crossfyre](https://crossfyre.io), for macOS (Intel and Apple
+silicon) and Linux (x86_64 and arm64).
 
 ## Install
 
@@ -48,8 +48,9 @@ PATH, and both are described at https://crossfyre.io/docs/install.
 `brew upgrade crossfyre` updates the CLI. `crossfyre update` leaves it to Homebrew.
 
 `brew uninstall crossfyre` removes the CLI. Your sign-in and the Web Tracer's CA
-stay in the CLI's config directory, `~/.config/crossfyre` by default, until you
-delete it.
+stay in the CLI's config directory until you delete it: by default
+`~/Library/Application Support/crossfyre` on macOS and `~/.config/crossfyre` on
+Linux.
 
 ## Licence
 
