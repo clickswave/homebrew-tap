@@ -4,19 +4,19 @@ class Crossfyre < Formula
   # One tarball per system and arch. on_intel and on_arm blocks cannot hold a url, so
   # this is the conditional Homebrew leaves to taps.
   if OS.mac? && Hardware::CPU.arm?
-    url "https://bins.crossfyre.io/crossfyre/v0.1.38/crossfyre-v0.1.38-darwin-aarch64.tar.gz"
-    sha256 "6e69a7f902057cfecc637ced8a4a34210aaa8fadda8a59bc483d87d503b784ad"
+    url "https://bins.crossfyre.io/crossfyre/v0.1.39/crossfyre-v0.1.39-darwin-aarch64.tar.gz"
+    sha256 "e7c5586b259215e6a223fff56e1ef6867cf259bf7d5be37818611ed905d94aa3"
   elsif OS.mac?
-    url "https://bins.crossfyre.io/crossfyre/v0.1.38/crossfyre-v0.1.38-darwin-x86_64.tar.gz"
-    sha256 "00e6428be61ec6dc1c115dcfc98aabc9b0c3e66bc1f920e0c86566c3205a4266"
+    url "https://bins.crossfyre.io/crossfyre/v0.1.39/crossfyre-v0.1.39-darwin-x86_64.tar.gz"
+    sha256 "a8d2e7684360fcf1698f75b888fa8f85c7f6b82843777b13a6c5490b7c309500"
   elsif Hardware::CPU.arm?
-    url "https://bins.crossfyre.io/crossfyre/v0.1.38/crossfyre-v0.1.38-linux-aarch64.tar.gz"
-    sha256 "548ed279d4c649e85717e1aa498b915052bd1c3911c3eb56d29740ab80984dfc"
+    url "https://bins.crossfyre.io/crossfyre/v0.1.39/crossfyre-v0.1.39-linux-aarch64.tar.gz"
+    sha256 "78c9676d2ff7509d07e55add4ef947a814b277e206f0a9e3493a924a4fb9bf86"
   else
-    url "https://bins.crossfyre.io/crossfyre/v0.1.38/crossfyre-v0.1.38-linux-x86_64.tar.gz"
-    sha256 "e4db34bba3c45164835ba2c7698926937d959545b0f6d3531db0582c7bb959cb"
+    url "https://bins.crossfyre.io/crossfyre/v0.1.39/crossfyre-v0.1.39-linux-x86_64.tar.gz"
+    sha256 "093121ea137c3b3800d7644d7cf45d99e916a158b24376f6acd74c1dcc7bc8d8"
   end
-  version "0.1.38"
+  version "0.1.39"
   # Apache-2.0 for the open source parts, and BINARY-LICENCE.txt, which SPDX has no
   # identifier for, for the binary as a whole.
   license all_of: ["Apache-2.0", :cannot_represent]
